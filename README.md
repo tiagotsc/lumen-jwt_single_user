@@ -529,7 +529,7 @@ Seu **token** anterior foi substituido por esse novo, portanto a partir de agora
 
 ![App Screenshot](images/img3.png)
 
-# Deslogando da API
+#### Deslogando da API
 
 Use o método **POST** e a seguinte **URL**.
 
@@ -576,7 +576,7 @@ docker compose kill
 docker rm -f $(docker ps -a -q)
 ````
 
-#### Documentação oficial do pacote JWT
+#### Documentação oficial do pacote JWT utilizado
 
 https://jwt-auth.readthedocs.io/
 
