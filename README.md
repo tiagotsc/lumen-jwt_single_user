@@ -230,7 +230,7 @@ $router->group(['prefix' => 'api/v1/user'], function () use ($router) {
 });
 ````
 
-13 - É opcional, mas facilitar, vou adicionar o pacote **flipbox/lumen-generator** que permite rodar comandos para gerar recursos.
+13 - É opcional, mas para facilitar, vou adicionar o pacote **flipbox/lumen-generator** que permite rodar comandos para gerar recursos.
 
 ````bash
 composer require flipbox/lumen-generator
