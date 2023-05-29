@@ -3,11 +3,17 @@
 
 Passo a passo de autenticação JWT na API Lumen 10 para um único tipo de usuário.
 
-Além da autenticação, será incluso uma verificação para que apenas usuários ativos consigam autenticar na API.
+Além da autenticação, será incluso verificação para que apenas usuários ativos consigam logar e configuração do CORS.
 
 ### Versões de softwares utilizados nesse tutorial
 
-Lumen 10.0.0 e tymon/jwt-auth 2.0.0
+- Lumen 10.0.0
+
+  https://lumen.laravel.com/docs/10.x
+
+- tymon/jwt-auth 2.0.0
+
+  https://github.com/tymondesigns/jwt-auth
 
 ### Siga as etapas
 
