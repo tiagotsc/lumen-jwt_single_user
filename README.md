@@ -432,9 +432,12 @@ class IsActiveMiddleware
      */
     public function handle($request, Closure $next)
     {
-        if(auth()->user() and auth()->user()->status == 'I'){
-            auth()->logout();
-            return response()->json(['message' => 'Not authorized'], 403);
+        $guards = array_keys(config('auth.guards')); # Obtem guards do arquivo config/auth.php
+        foreach($guards as $guard){
+            if(auth($guard)->check() and auth($guard)->user()->status == 'I'){
+                auth($guard)->logout();
+                return response()->json(['message' => 'Not authorized'], 403);
+            }
         }
         return $next($request);
     }
