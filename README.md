@@ -338,7 +338,7 @@ class AuthJWTController extends Controller
 }
 ````
 
-15 - Atualize o model **User**, deixando a seguinte forma.
+15 - Atualize o model **User**, deixando da seguinte forma.
 
 ````php
 <?php
