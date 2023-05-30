@@ -253,6 +253,8 @@ $app->register(Flipbox\LumenGenerator\LumenGeneratorServiceProvider::class);
 php artisan make:controller AuthJWTController
 ````
 
+Esse arquivo reside em **app/Http/Controllers**.
+
 E adiocione o seguinte conteúdo.
 
 ````php
@@ -343,7 +345,9 @@ class AuthJWTController extends Controller
 }
 ````
 
-15 - Atualize o model **User**, deixando a seguinte forma.
+15 - Atualize o model **User**, deixando da seguinte forma.
+
+Esse arquivo reside em **app/Http/Models**.
 
 ````php
 <?php
@@ -493,7 +497,7 @@ php artisan serve
 
 ### Consumindo a API
 
-Para os exemplos de consumo abaixo usei software **Postman**.
+Para os exemplos de consumo abaixo, usei o software **Postman**.
 Segue abaixo link para download.
 
 https://www.postman.com/downloads/
