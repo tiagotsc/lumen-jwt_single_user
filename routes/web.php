@@ -18,8 +18,13 @@ $router->get('/', function () use ($router) {
 });
 
 $router->group(['prefix' => 'api/v1/user'], function () use ($router) {
+
     $router->post('login', 'AuthJWTController@login');
-    $router->post('logout', 'AuthJWTController@logout');
-    $router->post('refresh', 'AuthJWTController@refresh');
-    $router->post('profile', 'AuthJWTController@profile');
+
+    $router->group(['middleware' => 'auth:api'], function () use ($router) {
+        $router->post('logout', 'AuthJWTController@logout');
+        $router->post('refresh', 'AuthJWTController@refresh');
+        $router->post('profile', 'AuthJWTController@profile');
+    });
+    
 });
