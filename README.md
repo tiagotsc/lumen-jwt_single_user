@@ -492,7 +492,7 @@ php artisan serve
 
 ### Consumindo a API
 
-Para os exemplos de consumo abaixo usei software **Postman**.
+Para os exemplos de consumo abaixo, usei o software **Postman**.
 Segue abaixo link para download.
 
 https://www.postman.com/downloads/
